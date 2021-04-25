@@ -1,9 +1,0 @@
-file_type: json
-dataset_name: resumes
-file_name: Resume
-table_name: resumes
-inbound_delimiter: ","
-outbound_delimiter: "\n"
-columns:
- - content
- - annotation
