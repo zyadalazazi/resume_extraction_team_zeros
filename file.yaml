@@ -1,0 +1,11 @@
+columns: 
+  - annotation
+  - content
+dataset_name: resumes
+dtypes: 
+  annotation: list
+  content: str
+file_name: Resume
+file_type: json
+skip_leading_rows: 1
+table_name: resumes
