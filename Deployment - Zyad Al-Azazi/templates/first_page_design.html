@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=devicec-width">
+    <title>Extracting Resume Information</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class = "container">
+    <h1><b><center>Extracting Resume Information</center></b></h1>	
+
+	<center>
+    <div style = "color: black">
+    <p><font color = "black"><br><br>Please attach your resume below<br><br></font></p>
+	<form action = "{{ url_for('extract')}}", method="POST">
+		Resume:<br><br><br>&emsp;&emsp;&emsp;&emsp;<input type = "file" id = "resume1" accept = ".docx, .pdf, .txt" name="document" required><br><br><br>
+                                                                                                    
+                                                                                                    
+		<button type = "submit", class = "btn btn-primary btn-block btn-large">Extract</button>
+	</form>
+   </center>
+        <h3><font color = 'white'>{{summary}}</font></h3>
+</div>	
+
+<body style="background-color:#800020;">
+
+</body>
+</html>
