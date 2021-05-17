@@ -8,7 +8,7 @@ import datetime
 
 model_file="ner_model"
 iterations=29
-dropout = decaying(base_rate=0.6, decay=0.2, t=1e-4)
+# dropout = decaying(base_rate=0.2, decay=0.2, t=1e-4)
 
 df = pd.read_json('Resume.json', lines=True)
 
@@ -146,7 +146,7 @@ with nlp.disable_pipes(*other_pipes):  # only train NER
         for text, annotations in a:
             doc = nlp.make_doc(text)
             example = Example.from_dict(doc, annotations)
-            nlp.update([example], sgd=optimizer,losses=losses, drop=next(dropout, -1))
+            nlp.update([example], sgd=optimizer,losses=losses, drop=0.2)   # drop=next(dropout, -1)
             print("losses", losses)
 
 nlp.to_disk('nlp_ner_model')
