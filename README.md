@@ -68,3 +68,10 @@ As per our client’s request, we were able to create functions that would accep
 9. `Limitations`
 
 Aside from not being to deploy our model as an application, there was a problem in our model’s accuracy that we have come to notice. The model had several wrong predictions in some resumes, while not being to extract information in some others. The main two reasons we thought of were: the nature of resumes not having a specific format or even outline and the limited dataset that were used in out project. As for the first point, the huge variety in resumes and CVs outlines makes it very challenging to automate the task of extracting information even for humans, who need to read the whole document to be able to know the necessary information. As for the second reason, it is very challenging to try to generate one’s own data as it needs to be carefully, thoroughly, and accurately annotated. Other datasets that are concerned with this problem were not found.
+
+<hr>
+
+<h3>Here is a short demo:</h3>
+<p align="center"> 
+    <img src='https://github.com/zyadalazazi/resume_extraction_team_zeros/blob/main/gif_resume_extractor.gif'>
+</p>
