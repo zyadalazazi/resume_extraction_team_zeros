@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets.css">
+    <title>Resume Extraction - Team ZeRoS</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-sm box-shadow ">
+        <div class="container-fluid">
+        <a href="/" class="navbar-brand align-items-center">
+          <strong><i class="far fa-futbol"></i>Resume Extraction</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <!-- <h1>Welcome to Resume Extraction</h1>
+    <br> -->
+    <div class="nav justify-content-end" class="navbar-collapse collapse" id="navbar">
+        <li class="nav-item"><a href="/resume" class="nav-link">Sample Resume</a></li>
+        <li class="nav-item"><a href="/testdata" class="nav-link">Test Data</a></li>
+        <li class="nav-item"><a href="/file" class="nav-link">Upload Your Resume</a></li>
+    </div>
+    </div>
+    </nav>
+    
+    <br>
+    <br>
+    <br>
+    <div class="card" style="padding-top: 25px; padding-bottom: 25px; text-align: center;">
+        <div class="card-body">
+          <h5 class="card-title">Testing Data</h5>
+          <p class="card-text" style="width: auto;">
+              This testing data consists of 20 resumes sampled out from the initial dataset given to us which had 200 resumes in total.
+              Click on the 'Test Data' from the navbar or 'Get Output' from this card in order to parse/extract of information
+              of any resume selected randomly from the test dataset of 20 resumes.
+          </p>
+          <a href="/testdata" class="btn btn-primary">Get Output</a>
+        </div>
+    </div>
+
+    <div class="card" style="padding-top: 25px; padding-bottom: 25px; text-align: center;">
+        <div class="card-body" >
+          <h5 class="card-title">Sample Resume</h5>
+          <p class="card-text">
+              Here we have provided a sample resume in the pdf format to extract the information using our trained model.
+              Click on 'Sample Resume' from the navbar or from this card in order to parse/extract of information
+              this resume.
+          </p>
+          <a href="/resume" class="btn btn-primary">Sample Resume</a>
+        </div>
+    </div>
+
+    <div class="card" style="padding-top: 25px; padding-bottom: 25px; text-align: center;">
+        <div class="card-body" >
+          <h5 class="card-title">Upload Your Own Resume</h5>
+          <p class="card-text">
+              Test our NER Spacy trained model on your own resume. Just click on 'Upload Your Own Resume' from navbar or
+              from the button below in order to upload your resume for testing.
+              One thing to note here is that this model is trained on ~180 resumes, so it might not be able to do justis to your incredible resume.
+          </p>
+          <a href="/file" class="btn btn-primary">Upload Your Own Resume</a>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <!-- <br>
+        <br> -->
+        <p style="text-align: center;">
+            This project is carried out by <span style="font-weight: bold;"><a style="text-decoration: none;">Team ZeRoS</a></span> with &#10084.
+        </p>
+        <p style="text-align: center;">
+            It is done during our Data Glacier Internship.
+        </p>
+    </div>
+</body>
+</html>
