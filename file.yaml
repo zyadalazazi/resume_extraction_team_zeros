@@ -3,8 +3,8 @@ columns:
   - content
 dataset_name: resumes
 dtypes: 
-  annotation: list
-  content: str
+    annotation: list
+    content: str
 file_name: Resume
 file_type: json
 skip_leading_rows: 1
